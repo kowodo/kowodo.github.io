@@ -1,3 +1,18 @@
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.note {
+  color: gray;
+}
+
 .header ul {
   list-style-type: none;
   margin: 0;
@@ -14,6 +29,7 @@
   text-decoration: none;
   color: black;
   padding: 8px 16px;
+  border: none;
 }
 .header ul a.active {
   background-color: black;
