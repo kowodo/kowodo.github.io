@@ -44,4 +44,8 @@ a:hover {
   padding: 8px;
 }
 
+p {
+  max-width: 600px;
+}
+
 /*# sourceMappingURL=style.css.map */
