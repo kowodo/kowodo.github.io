@@ -1,3 +1,8 @@
+body {
+  font: normal normal 14px Inconsolata;
+  font-family: "Inconsolata", Courier, monospace;
+}
+
 a {
   color: black;
   text-decoration: none;
