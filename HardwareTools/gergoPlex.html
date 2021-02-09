@@ -21,7 +21,7 @@
     <img src="../img/gergoplex/gergoplex heavy.jpg" width="100%"/>
     <p>Is keyboard with chording in mind. You can purchase it with 12g switches!.
         That should remove the strain on fingers when chording.
-         </p>
+    </p>
     <p>Also it is programmed thru QMK with all of it's glorious features.</p>
     <p>Here is look at the default key layout:</p>
     <img src="../img/gergoplex/gergoplex default keymap.png" width="100%"/>
@@ -38,13 +38,12 @@
     <h2>Breaking the keycaps</h2>
 
 
-
-
     <h2>Some useful links</h2>
     <h4>g Heavy Industries links</h4>
     <ul>
         <li><a href="https://www.gboards.ca/product/gergoplex">GergoPlex homepage</a><br></li>
-        <li><a href="https://blog.gboards.ca/2020/01/weird-keyboards-programmable-keyboards.html?m=1">Creator's keyboard journey</a><br></li>
+        <li><a href="https://blog.gboards.ca/2020/01/weird-keyboards-programmable-keyboards.html?m=1">Creator's keyboard
+            journey</a><br></li>
     </ul>
     <h4>Youtube videos</h4>
     <ul>
@@ -69,15 +68,27 @@
     <h4>Some parts I might want to buy</h4>
     <ul>
         <li><a href="https://www.aliexpress.com/item/32959996455.html">switches</a><br></li>
-        <li><a href="https://mkultra.click/products/scooped-choc-keycaps?variant=31223543398498">Scooped Choc Keycaps - clear</a><br></li>
-        <li><a href="https://mkultra.click/products/mbk-choc-keycaps?variant=31262645256290">MBK Choc Keycaps - 10x (1u)</a><br></li>
+        <li><a href="https://mkultra.click/products/scooped-choc-keycaps?variant=31223543398498">Scooped Choc Keycaps -
+            clear</a><br></li>
+        <li><a href="https://mkultra.click/products/mbk-choc-keycaps?variant=31262645256290">MBK Choc Keycaps - 10x
+            (1u)</a><br></li>
     </ul>
     <h4>Debouncing problem solution in QMK</h4>
     <ul>
-        <li><a href="https://beta.docs.qmk.fm/using-qmk/software-features/feature_debounce_type">Debounce API</a><br></li>
+        <li><a href="https://beta.docs.qmk.fm/using-qmk/software-features/feature_debounce_type">Debounce API</a><br>
+        </li>
     </ul>
-
-
+    <p>This unfortunately does not work for me.... I tried to increase the time for which next key press is ignored
+    from 5 ms to 50 ms. It did not solve the problem.</p>
+    <p>Since this constant is on many places I should be exact:
+        I have changed the on in keyboards/gboards/k/gergoplex/config.h</p>
+    <p>MrLinuxFish@MechKeys@Discord he have Gergoplex and have no debouncing issues.
+    Lunnarus@xahlee@Discord has the same problem as I do.</p>
+    <h4>Personal GergoPlex TODO:</h4>
+    <ul>
+        <li>Solve the Debouncing problem.</li>
+        <li>Use Wireshark to sniff USB to see where the debouncing problem originates.</li>
+    </ul>
 
 
 </div>
