@@ -97,6 +97,31 @@
         <li>Double quotes on single key</li>
     </ul>
 
+    <h4>fix from Lunarus @FAAK</h4>
+    <pre>
+        @kowodo(Pro. Grade Beginner) if you need to update your keyboard in the next bit and run into an import error, backup your directory, pull from mainline then replace the following files in mainline with your existing or from Germ's latest:
+
+.../quantum/matrix_common.c
+.../tmk_core/common/mousekey.c
+.../tmk_core/common/print.h
+.../tmk_core/protocol/ps2_mouse.c
+.../tmk_core/protocol/m0110.c
+
+if you get error: implicit declaration of function 'phex'... skip to file replacement of the ones outlined above
+qmk made a change that breaks Germ's branch
+So the build tool errors out because it can't import stuff
+So you need to have mainline up to date but replace a few files with Germ's version otherwise two functions cause errors
+As usual sledgehammer approach works :stuck_out_tongue:
+I'm sure if I decided to take the time or if someone else decided to take the time Germ's stuff could be patched properly but that's not how I roll with personal projects
+I beat it into submission to avoid actual work
+The compiler actually tells me how to fix one of the functions, it just needs to be renamed
+But that's a pain because then I need to rename it in several files which why do that when I can try rolling back the problematic files. Lo and behold selective rollback works!
+perhaps one day I'll look at the files through a diff and see what's different
+Success
+Flashed successfully, everything works better
+    </pre>
+    <a href="https://discord.com/channels/722381965306757141/779187830270328842/863869517510606848">link to the original message @FAAK</a>
+
 
 </div>
 </body>
